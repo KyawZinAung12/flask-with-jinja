@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+	<head> <title> Flask with Jinja</title></head>
+		<body>
+			<ul>
+				<li><img src ="{{url_for('static', filename ='a.jpg')}}"/></li>
+				{# This is a comment for jinja template , we make a varible#}
+				{% set name = "Kyaw Zin Aung"%}
+				<li>{{name}}</li>
+
+				{% set username = "KyawZinAung12" %}
+				<li><a href="https://github.com/{{username}}">Github</a></li>
+				{% set usernameheroku= "Kyaw Zin Aung" %}
+				<li><a href="https://{{usernameheroku}}.herokuap.com">Heroku</a></li>
+			</ul>
+		</body>
+</html>
